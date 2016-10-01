@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Guessing Game</title>
+	<!-- Javascript libraries here -->
+</head>
+<body onload = "do_game();">
+	<!-- Javascript code here -->
+	<script type="text/javascript">
+		var color_list = ["Cyan", "DarkSeaGreen", "Gold", "LightSeaGreen", "Red", "SkyBlue" ,
+			"Teal" , "Lime" , "Silver" , "Tan" , "Orchid" , "Orange" , "SteelBlue"];
+		var target;
+		var guess_counter = 0;
+
+		function do_game(){			
+		//Sort color list
+			color_list.sort();
+		//Randomly select a color
+			var target_index = Math.floor(Math.random() * color_list.length);
+			target = color_list[target_index];
+
+		//Display the target
+			//alert("The answer is " + target);
+
+		//Loop until player guesses correctly
+			do{
+			//Prompt the user to enter guess
+				var guess = prompt("I am thinking of one of these colors:\n\n     " + color_list.join("\n     ")
+					+ "\n\nWhat color am I thinking of?"); 
+				//Increment guess counter
+				guess_counter++;
+				//Check the guess
+				check_guess(guess);
+
+			}while(guess != target);
+
+		}
+
+		function check_guess(guess){
+
+			if(color_list.indexOf(guess) == -1){
+			//Color not in the array
+				alert("Sorry, I don't recognize your color.\n\nPlease Try Again.");
+			}
+			else if(guess > target){
+			//Color alphabetically lower
+				alert("Sorry, your guess is not correct!\n\nHint: your color is alphabetically higher than mine.\n\nPlease Try Again.");
+			}
+			else if(guess < target){
+			//Color alphabetically higher
+				alert("Sorry, your guess is not correct!\n\nHint: your color is alphabetically lower than mine.\n\nPlease Try Again.");
+			}
+			else if(guess == target){
+			//Correct guess
+				document.body.style.background = target;
+				alert("Congratulations! You have guessed the color!\n\nIt took you " + guess_counter + " guesses to finish the game!\n\nYou can see the colour in the background.");
+			}
+
+		}
+	</script>
+</body>
+</html>

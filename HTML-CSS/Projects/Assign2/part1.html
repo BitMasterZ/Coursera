@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Guessing Game</title>
+	<!-- Javascript libraries here -->
+</head>
+<body onload = "do_game();">
+	<!-- Javascript code here -->
+	<script type="text/javascript">
+		var color_list = ["Cyan", "DarkSeaGreen", "Gold", "LightSeaGreen", "Red", "SkyBlue" ,
+			"Teal" , "Lime" , "Silver" , "Tan" , "Orchid" , "Orange" , "SteelBlue"];
+		var target;
+
+		function do_game(){			
+		//Sort color list
+			color_list.sort();
+		//Randomly select a color
+			var target_index = Math.floor(Math.random() * color_list.length);
+			target = color_list[target_index];
+
+		//Display the target
+			alert("The answer is " + target);
+
+		//Loop until player guesses correctly
+			do{
+			//Prompt the user to enter guess
+				var guess = prompt("I am thinking of one of these colors:\n\n     " + color_list.join("\n     ")
+					+ "\n\nWhat color am I thinking of?"); 
+			}while(guess != target);
+
+		}
+	</script>
+</body>
+</html>

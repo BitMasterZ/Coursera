@@ -1,0 +1,18 @@
+h1{
+	color: purple;
+}
+
+h1:hover{
+	background:orange;
+	
+}
+
+p{
+	color: blue;
+}
+
+.zappy{color:blue;}
+.wow{background:lime;}
+
+#theElementID{color:red;}
+.className{color:blue;}

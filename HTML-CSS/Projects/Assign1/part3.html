@@ -1,0 +1,141 @@
+<html>
+<head>
+	<title>Dating Website</title>
+	<style>
+
+		fieldset{
+			background: lightyellow;
+			border: 10px solid yellow;
+			margin-bottom: 10px;
+			width: 720px;
+		}
+		label{
+			width: 180px;
+			display: inline-block;
+			text-align: right;
+			vertical-align: top;
+		}
+		textarea{
+			width: 360px;
+			height: 50px;
+		}
+
+		.auto{width: auto;}
+		.pos{
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+			color: white;
+			background: purple;
+			width: 50px;
+			height: 20px;		
+		}
+		.neg{
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+			color: white;
+			background: darkred;
+			width: 50px;
+			height: 20px;
+		}
+
+		label:hover:not(.neg):not(.pos){
+			font-size: 30px;
+		}
+
+		textarea:hover{
+			width: 540px;
+			height: 75px;
+		}
+
+		input:hover{
+			font-size: 30px;
+		}
+
+		select:hover{
+			font-size: 30px;
+		}
+
+
+	</style>
+	<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</head>
+<body>
+<!-- Heading -->
+	<h1>Please Enter Your Details For Our Dating Website!</h1>
+<!-- Form	 -->
+	<form action = "http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method = "post" enctype = "multipart/form-data">
+		<fieldset>
+			<legend>Your Face</legend>
+		<!-- File attachment -->
+			<label for = "imgFile">Your image:</label>
+			<input type = "file" name = "imgFile" id = "imgFile" required> <br>
+		<!-- Image preview -->
+			<label for = "image">Image preview:</label>
+			<img id = "preview">
+		</fieldset>
+		<fieldset>
+			<legend>Your General Details</legend>
+		<!-- Name -->
+			<label for = "name">Name:</label>
+			<input type = "text" name = "name" id = "name" placeholder = "Your full name" required> <br>
+		<!-- Gender -->
+			<label for = "gender">Gender:</label>
+			<input type = "radio" name = "gender" id = "gender" required><label for = "gender" class = "auto">Male</label>			
+			<input type = "radio" name = "gender" id = "gender" required><label for = "gender" class = "auto">Female</label> <br>
+		<!-- Age -->
+			<label for = "age">Age:</label>
+			<input type = "number" name = "age" id = "age" required> <br>
+		<!-- Date of birth -->
+			<label for = "DOB">Date of birth:</label>
+			<input type = "date" name = "DOB" id = "DOB"> <br>
+		<!-- Color -->
+			<label for = "col">Favorite color:</label>
+			<input type = "color" name = "col" id = "col"> <br>
+		<!-- Country -->
+			<label for = "country">Which country:</label>
+			<select name = "country" id = "country">
+			  <option></option>
+			  <option>America</option>
+			  <option>China</option>
+			  <option>Japan</option>
+			  <option>Thailand</option>
+			  <option>United Kingdom</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Your Indicators</legend>
+		<!-- Height -->
+			<label for = "height">Height:</label> 
+			<label for = "height" class = "neg">Short</label>
+			<input type = "range" name = "height" id = "height" min = "0" max = "100">
+			<label for = "height" class = "pos">Tall</label><br>
+		<!-- Salary -->
+			<label for = "salary">Salary:</label>
+			<label for = "salary" class = "neg">Poor</label>
+			<input type="range" name = "salary" id = "salary" min = "0" max = "100">
+			<label for = "salary" class = "pos">Rich</label>
+		</fieldset>
+		<fieldset>
+			<legend>Your Contact Information</legend>
+		<!-- Email -->
+			<label for = "mail">Email:</label>
+			<input type = "email" name = "mail" id = "mail" required> <br>
+		<!-- Mobile number -->
+			<label for = "mobile">Mobile:</label>
+			<input type = "tel" name = "mobile" id = "mobile"> <br>
+		<!-- Address -->
+			<label for = "addr">Address:</label>
+			<textarea name = "addr"></textarea> <br>
+		<!-- Contact method -->
+			<label for = "contact">Method to contact you:</label>
+			<input type = "checkbox" name = "contact"><label for = "contact"  class = "auto">Email</label>
+			<input type = "checkbox" name = "contact"><label for = "contact"  class = "auto">Whatsapp</label>
+			<input type = "checkbox" name = "contact"><label for = "contact"  class = "auto">In-app chat</label>
+		</fieldset>
+	<!-- Submit button -->
+		<input type = "submit" value = "Submit!">
+	</form>
+</body>
+</html>

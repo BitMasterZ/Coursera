@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> TITLE </title>
+	<!-- Javascript libraries here -->
+</head>
+<body>
+	<!-- Javascript code here -->
+	<script type="text/javascript">
+		//Arrray
+		var continents = ["Asia", "North America", "South America", "Europe", "Africa", "Austrailia", "Antartica"];
+		var vals = [1, 2, 3, 4, 5];
+		//Object
+		var person = {NAME: "Tom", AGE: 50, OCCUPATION: "Teacher"}
+
+		for(var index in continents){
+			document.write(continents[index] + " <br>");
+		}
+		
+		document.write("<br>");
+
+		for(var prop in person){
+			document.write(prop + ": " + person[prop] + " <br>");
+		}
+		
+		document.write("<br>");
+
+		for(var continent of continents){
+			document.write(continent + " <br>");
+		}
+		
+		document.write("<br>");
+
+		//For each function
+		continents.forEach(printMsg);
+
+		document.write("<br>");
+
+		//Map function
+		f = vals.map(y);
+		f.forEach(function (v, i, arr){
+			document.write("&nbsp&nbsp y(" + vals[i] + ") = " + v + " <br>");
+		})
+
+		document.write("<input type = 'button' value = 'Add Bar' onclick = 'addBar();' />")
+
+		function printMsg(text, index, arr){
+			document.write((index + 1) + ") " + text + "   " +  (index+1)/(arr.length+1) * 100 + "% <br>");
+		}
+
+		function y(x, i, arr){
+			return 2 * x + 5;
+		}
+
+		function addBar(){
+			newItem = document.createElement("hr");
+			destParent = document.getElementsByTagName("body")[0];
+			destParent.insertBefore(newItem, destParent.firstChild);
+		}
+
+
+
+
+	</script>
+</body>
+</html>

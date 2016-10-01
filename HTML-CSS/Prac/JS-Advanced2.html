@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced 2</title>
+	<!-- Javascript libraries here -->
+</head>
+<body>
+	<!-- Javascript code here -->
+	<script type="text/javascript">
+	//Mouse events
+		//onclick, onmousedown, onmouseup, onmouseover, onmouseout
+	//Timer
+
+	var invoke = setTimeout(print_stat, 5000, "Msg");
+	//clearTimeout(invoke);
+	var the_timer = setInterval(button, 3000, "QWERTY");
+
+	function button(){
+		document.write("<input type = 'button' value = 'clear' onclick = 'clearInterval(the_timer);' /><br>");
+	}
+	function print_stat(arg){
+		document.write(arg + " <br>");
+	}
+	</script>
+</body>
+</html>
