@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body data-spy = "scroll" data-target = "#myScrollspy" data-offset = "200">
     <nav class = "navbar navbar-default" role = "navigation">
         <div class = "container">
             <div class = "navbar-header">
@@ -56,7 +56,13 @@
             </div>    
         </div> 
     </nav>
-
+    <nav class = "hidden-xs col-sm-2" id = "myScrollspy">
+        <ul class = "nav nav-pills nav-stacked" data-spy = "affix" data-offset-top = "400">
+            <li><a href="">Our History</a></li>
+            <li><a href="">Corporate</a></li>
+            <li><a href="">Facts</a></li>
+        </ul>
+    </nav>
 <!-- Glyphicon -->
     <span class = "glyphicon glyphicon-home" aria-hidden = "true"></span> <br><br>
 <!-- Font Awesome -->
@@ -195,7 +201,41 @@
         <button type = "button" class = "close" data-dismiss = "alert" aria-label = "Close">
             &times;
         </button>
-        <strong>Warning:</strong>: Please call customer service    
+        <strong>Warning:</strong>: Please call cust
+    </div>    
+
+        <ul class = "nav nav-tabs" role = "tablist">
+        <li role = "presentation" class = "active">
+        <a href = "#peter" aria-controls = "home" role = "tab" data-toggle = "tab">Peter Pan, CEO</a>
+        </li>
+        <li role = "presentation">
+        <a href = "#danny" aria-controls = "profile" role = "tab" data-toggle = "tab">Danny Witherspoon, CFO</a>
+        </li>
+        <li role = "presentation">
+        <a href = "#agumbe"  aria-controls = "messages" role = "tab" data-toggle = "tab">Agumbe Thing, CTO</a>
+        </li>
+        <li role = "presentation">
+        <a href = "#alberto"  aria-controls = "settings" role = "tab" data-toggle = "tab">Alberto Somayya, Exec. Chef</a>
+        </li>
+    </ul>
+    <div class = "tab-content">
+        <div role ="tabpanel" class = "tab-pane fade in active" id = "peter">
+            <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
+            <p> Details Details details.................... blah blah blah</p>
+        </div>
+        <div role ="tabpanel" class = "tab-pane fade in" id = "danny">
+            <h3>Danny Witherspoon <small>The Random Officer</small></h3>
+            <p> Details Details details.................... blah blah blah</p>
+        </div>
+        <div role ="tabpanel" class = "tab-pane fade in" id = "agumbe">
+            <h3>Agumbe Thing, CTO <small>The Random Officer</small></h3>
+            <p> Details Details details.................... blah blah blah</p>
+        </div>
+        <div role ="tabpanel" class = "tab-pane fade in" id = "alberto">
+            <h3>Alberto Somayya <small>The Random Officer</small></h3>
+            <p> Details Details details.................... blah blah blah</p>
+        </div>        
+    </div>omer service    
     </div>
 
 <!-- Progress Bar -->
@@ -204,8 +244,160 @@
             80%
         </div>
     </div>
+<!-- Tabs -->
+
+<!-- Pills -->
+    <ul class = "nav nav-pills nav-justified" role = "tablist">
+        <li role = "presentation" class = "active">
+            <a href = "#peter" aria-controls = "home" role = "tab" data-toggle = "tab">Peter Pan, CEO</a>
+        </li>
+        <li role = "presentation">
+            <a href = "#danny" aria-controls = "profile" role = "tab" data-toggle = "tab">Danny Witherspoon, CFO</a>
+        </li>
+        <li role = "presentation">
+            <a href = "#agumbe"  aria-controls = "messages" role = "tab" data-toggle = "tab">Agumbe Thing, CTO</a>
+        </li>
+        <li role = "presentation">
+            <a href = "#alberto"  aria-controls = "settings" role = "tab" data-toggle = "tab">Alberto Somayya, Exec. Chef</a>
+        </li>
+    </ul>
+<!-- Collapsible stuff --><br>
+<div class = "col-md-5 col-md-offset-1">
+    <div class = "collapse in" id = "collapseExample">
+        <div class = "well">
+            <h3>Some Collapsible Content</h3>
+            <p> This is some collapsible content</p>
+        </div>
+    </div>
+</div>
+<div class = "col-md-3">
+    <a class = "btn btn-primary" role = "button" data-toggle = "collapse" href = "#collapseExample" aria-expanded = "false" aria-controls = "collapseExample" data-placement = "right" title = "Used to collapse panel">
+        Toggle info
+    </a>
+</div>
+<!-- Accordian -->
+<div class = "row">
+    <div class = "panel-group" id = "accordian" role = "tablist">
+        <div class = "panel panel-default">
+            <div class = "panel-heading" role = "tab" id = "headingPeter">
+                <h3 class = "panel-title">
+                    <a role = "button" data-toggle = "collapse" data-parent = "#accordian" href = "#peter2">
+                        Peter Pan
+                    </a>
+                </h3>
+            </div>
+            <div role = "tabpanel" class = "panel-collapse collapse" id = "peter2">
+                <div class = "panel-body">
+                Basdlnasldnas sadklnasdlknasd laskdaskldnm <br> asldksadmas dosiahdlas dlkashdlk
+                </div>
+            </div>
+        </div>
+        <div class = "panel panel-default">
+            <div class = "panel-heading" role = "tab" id = "headingDanny">
+                <h3 class = "panel-title">
+                    <a role = "button" data-toggle = "collapse" data-parent = "#accordian" href = "#danny2">
+                        Danny
+                    </a>
+                </h3>
+            </div>
+            <div role = "tabpanel" class = "panel-collapse collapse" id = "danny2">
+                <div class = "panel-body">
+                Basdlnasldnas sadklnasdlknasd laskdaskldnm <br> asldksadmas dosiahdlas dlkashdlk
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "row">
+<!-- Tooltip -->
+    <div class = "col-sm-3 col-sm-offset-2">
+        <a class = "btn btn-primary" role = "button" data-toggle = "tooltip" data-placement = "right" title = "Used to collapse panel">
+            Tool
+        </a>
+    </div>
+<!-- Popup -->
+    <div class = "col-sm-3">
+        <a class = "btn btn-primary" role = "button" data-toggle = "popover" data-placement = "right" title = "Message 1" data-content = "Text for Message 1 is text">
+            Pop
+        </a>
+    </div>
+<!-- Modal -->
+    <div class = "col-sm-3">
+        <a class = "btn btn-primary" role = "button" data-toggle = "modal" data-target = "#loginModal">
+            Modal
+        </a>
+    </div>
+</div>
+<!-- Modal -->
+<div id = "loginModal" class = "modal fade" role= "dialog">
+    <div class = "modal-dialog">
+        <div class = "modal-content">
+            <div class = "modal-header">
+                <button type = "button" class = "close" data-dismiss = "modal"> &times;</button>
+                <h4 class = "modal-title">Login</h4>
+            </div>
+            <div class = "modal-body">
+                ASDsadas asd sad asd 
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<!-- Carousel -->
+<div id = "mycarousel" class = "carousel slide" data-ride = "carousel" style="background-color: yellow;">
+    <div class = "carousel-inner" role = "listbox">
+        <div class = "item active">
+            asdsadasdasdas<br><br><br><br>
+            <div class = "carousel-caption">Caption</div>
+        </div>
+        <div class = "item">
+            asdsadasdasdas<br>
+            asdsad<br>
+            asdsa<br>
+            das<br>
+            d<br>
+            asd<br>
+            asdsad<br>
+            asd<br>
+            <div class = "carousel-caption">Caption 2</div>
+        </div>
+        <div class = "item">
+            asdsadasdasdas<br>
+            asdsad<br>
+            <br>
+            das<br>
+            d<br>
+            <br>
+            asdsad<br>
+            asd<br>
+            <div class = "carousel-caption">Caption 3</div>
+        </div>
+    </div>
+    <ol class = "carousel-indicators">
+        <li data-target = "#mycarousel" data-slide-to = "0" class = "active"></li>
+        <li data-target = "#mycarousel" data-slide-to = "1"></li>
+        <li data-target = "#mycarousel" data-slide-to = "2"></li>
+    </ol>    
+    <a class = "left carousel-control" href = "#mycarousel" role = "button" data-slide = "prev">
+        <span class = "glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class = "right carousel-control" href = "#mycarousel" role = "button" data-slide = "next">
+        <span class = "glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+<br><br><br><br><br>
 <!-- Bootstrap Javascript file links -->
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src = "js/bootstrap.min.js"></script>
+<!-- For tooltips and modals -->
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 </html>
