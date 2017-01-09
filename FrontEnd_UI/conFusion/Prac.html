@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://d396qusza40orc.cloudfront.net/phoenixassets/web-frameworks/index.html -->
+<html>
+<head>
+
+<!-- Bootstrap meta -->
+    <meta charset = "utf-8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=Edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<!-- Title -->
+    <title>Bootstrap Practice</title>
+<!-- Bootstrap CSS Files -->
+	<link href = "css/bootstrap.min.css" rel = "stylesheet">
+	<link href = "css/bootstrap-theme.min.css" rel = "stylesheet">
+	<link href = "css/mystyles.css" rel = "stylesheet">
+
+</head>
+
+<body data-spy = "scroll" data-target = "#myScrollspy" data-offset = "200">
+    <nav class = "navbar navbar-default" role = "navigation">
+        <div class = "container">
+            <div class = "navbar-header">
+            <button type = "button" class = "navbar-toggle collapsed"
+                data-toggle = "collapse" data-target = "#navbar" aria-expanded = "false" aria-controls = "navbar">
+
+                <span class = "sr-only">Toggle navigation</span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                
+            </button>
+
+                <a class = "navbar-brand" href = "#"> My Page </a>
+            </div>
+            <div id = "navbar" class = "navbar-collapse collapse">
+                <ul class = "nav navbar-nav">
+                    <li class = "active"><a href = "#">Home</a></li>
+                    <li><a href = "#">About</a></li>
+                    <li class = "dropdown">
+                        <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup = "true" aria-expanded = "false">Menu <span class = "caret"></span></a>
+                        <ul class = "dropdown-menu">
+                            <li><a href = "#">Appetizers</a></li>
+                            <li><a href = "#">Main Courses</a></li>
+                            <li><a href = "#">Desserts</a></li>
+                            <li><a href = "#">Drinks</a></li>
+                            <li role = "seperator" class = "divider">Specials</li>
+                            <li><a href = "#">Lunch Buffet</a></li>
+                            <li><a href = "#">Weekend Brunch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class = "nav navbar-nav navbar-right">
+                    <li><a href = "#">Sign in</a></li>
+                    <li><a href = "#">Contact</a></li>
+                </ul>
+            </div>    
+        </div> 
+    </nav>
+    <nav class = "hidden-xs col-sm-2" id = "myScrollspy">
+        <ul class = "nav nav-pills nav-stacked" data-spy = "affix" data-offset-top = "400">
+            <li><a href="">Our History</a></li>
+            <li><a href="">Corporate</a></li>
+            <li><a href="">Facts</a></li>
+        </ul>
+    </nav>
+<!-- Glyphicon -->
+    <span class = "glyphicon glyphicon-home" aria-hidden = "true"></span> <br><br>
+<!-- Font Awesome -->
+    <i class="fa fa-phone"></i> <br><br>
+
+<!-- Buttons -->
+    <div class = "btn-group btn-group-md">
+        <button type = "button" class = "btn btn-default">General</button>
+        <button type = "button" class = "btn btn-info">Info</button>
+        <button type = "button" class = "btn btn-success">Sucess</button>
+        <button type = "button" class = "btn btn-danger">Danger</button>
+    </div>
+
+    <div class = "btn-group-vertical btn-group-lg">
+        <button type = "button" class = "btn btn-primary">General</button>
+        <button type = "button" class = "btn btn-warning">Warning</button>
+    </div>
+    <br><br>
+    <form class = "form-horizontal" role = "form">
+        <div class = "form-group">
+            <label for "firstname" class = "col-sm-2 control-label">First Name</label>
+            <div class = "col-sm-10">
+                <input type = "text" class = "form-control" id = "firstname" name = "firstname" placeholder = "Enter first name">
+            </div>
+        </div>
+    </form>
+
+    <form class = "form-inline">
+        <div class = "form-group">
+            <label class = "sr-only" for = "email">Email address</label>
+            <input type = "email" class = "form-control" id = "email" placeholder = "Email">
+        </div>
+        <div class = "form-group">
+            <label class = "sr-only" for = "pass">Password</label>        
+            <input type = "password" class = "form-control" id = "pass" placeholder = "Password">
+        </div>
+        <div class = "checkbox">
+             <label><input type = "checkbox"> Remember Me</label>
+        </div>
+        <button type = "submit" class = "btn btn-info">Sign In</button>
+
+    <!-- Input group -->
+        <div class = "input-group">
+            <div class = "input-group-addon">(</div>
+            <input type = "tel" class = "form-control" id = "areacode" name = "areacode"
+                placeholder = "Area code" />
+            <div class = "input-group-addon">)</div>
+        </div>
+    </form>
+    <br><br>
+    <div class = "container">
+<!-- Tables -->
+        <table class = "table">
+            <tr class = "active">
+                <td class = "info">a</td>
+                <td class="danger">d</td>
+                <td>d</td>
+            </tr>
+            <tr>
+                <td class = "success">A</td>
+                <td>D</td>
+                <td class = "warning">D</td>
+            </tr>
+        </table>
+        <br><br>
+<!-- Panels -->
+        <div class = "panel panel-primary">
+            <div class = "panel-heading">
+                <h3 class = "panel-title">Facts at a Glance</h3>
+            </div>
+            <div class = "panel-body">
+                <dl class = "dl-horizontal">
+                    <dt>Started</dt>
+                    <dd>3 Feb 2013</dd>
+                    <dt>Major Stake Holder</dt>
+                    <dd>HK Fine Foods Inc.</dd>
+                    <dt>Last Year's Turnover</dt>
+                    <dd>$1,250.37</dd>
+                    <dt>Employees</dt>
+                    <dd>40</dd>
+                </dl>                
+            </div>
+            <div class = "panel-footer">
+                Footer
+            </div>
+        </div>
+<!-- Wells -->
+        <div class = "well well-lg">
+            <blockquote>
+                You better cut the pizza in four pieces beacuse I'm not hungry enough to eat six.
+            <footer>
+                Yogi Bear
+                <cite title = "Source Title">The Wit and Wisdom of Yogi Bear, P.Pepe, Diversion Books, 2014</cite>
+            </footer>
+            </blockquote>
+        </div>
+    </div>
+
+<!-- Images -->
+    <img src = "http://www.floridatile.com/system/images/4909/original/FTI28217HDPS.jpg" width = 300 height = 300 class = "img-rounded">
+
+    <div class = "thumnnail">
+        <a href="#">
+            <img src="http://www.floridatile.com/system/images/4909/original/FTI28217HDPS.jpg" class = "media-object img-thumbnail" width = 100 height = 100 alt = "ABCD">
+        </a>
+        <div class = "caption">
+            <h2>Tiles</h2>
+            <p>
+            Some random text
+            </p>
+            <p><a class = "btn btn-primary btn-xs">More &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class = "media">
+        <div class = "media-left media-middle">
+            <a href="#">
+                <img src="http://www.floridatile.com/system/images/4909/original/FTI28217HDPS.jpg" class = "media-object img-thumbnail" width = 100 height = 100 alt = "ABCD">    
+            </a>
+        </div>
+        <div class = "media-body">
+            <h2 class = "media-heading">
+                Tile #1
+                <span class = "label label-danger label-xs">Hot</span>
+                <span class = "badge">$4.99</span>
+            </h2>
+            <h4>A Simple Tile</h4>
+            <p>
+            Some text................... blah blah blah
+            </p>
+        </div>        
+    </div>
+
+<!-- Alerts -->
+    <div class = "alert alert-warning alert-dismissable" role = "alert">
+        <button type = "button" class = "close" data-dismiss = "alert" aria-label = "Close">
+            &times;
+        </button>
+        <strong>Warning:</strong>: Please call cust
+    </div>    
+
+        <ul class = "nav nav-tabs" role = "tablist">
+        <li role = "presentation" class = "active">
+        <a href = "#peter" aria-controls = "home" role = "tab" data-toggle = "tab">Peter Pan, CEO</a>
+        </li>
+        <li role = "presentation">
+        <a href = "#danny" aria-controls = "profile" role = "tab" data-toggle = "tab">Danny Witherspoon, CFO</a>
+        </li>
+        <li role = "presentation">
+        <a href = "#agumbe"  aria-controls = "messages" role = "tab" data-toggle = "tab">Agumbe Thing, CTO</a>
+        </li>
+        <li role = "presentation">
+        <a href = "#alberto"  aria-controls = "settings" role = "tab" data-toggle = "tab">Alberto Somayya, Exec. Chef</a>
+        </li>
+    </ul>
+    <div class = "tab-content">
+        <div role ="tabpanel" class = "tab-pane fade in active" id = "peter">
+            <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
+            <p> Details Details details.................... blah blah blah</p>
+        </div>
+        <div role ="tabpanel" class = "tab-pane fade in" id = "danny">
+            <h3>Danny Witherspoon <small>The Random Officer</small></h3>
+            <p> Details Details details.................... blah blah blah</p>
+        </div>
+        <div role ="tabpanel" class = "tab-pane fade in" id = "agumbe">
+            <h3>Agumbe Thing, CTO <small>The Random Officer</small></h3>
+            <p> Details Details details.................... blah blah blah</p>
+        </div>
+        <div role ="tabpanel" class = "tab-pane fade in" id = "alberto">
+            <h3>Alberto Somayya <small>The Random Officer</small></h3>
+            <p> Details Details details.................... blah blah blah</p>
+        </div>        
+    </div>omer service    
+    </div>
+
+<!-- Progress Bar -->
+    <div class = "progress">
+        <div class = "progress-bar progress-bar-danger progress-bar-striped" role = "progressbar" aria-valuenow = "80" aria-valuemin = "0" aria-valuemax = "100" style = "width: 80%;">
+            80%
+        </div>
+    </div>
+<!-- Tabs -->
+
+<!-- Pills -->
+    <ul class = "nav nav-pills nav-justified" role = "tablist">
+        <li role = "presentation" class = "active">
+            <a href = "#peter" aria-controls = "home" role = "tab" data-toggle = "tab">Peter Pan, CEO</a>
+        </li>
+        <li role = "presentation">
+            <a href = "#danny" aria-controls = "profile" role = "tab" data-toggle = "tab">Danny Witherspoon, CFO</a>
+        </li>
+        <li role = "presentation">
+            <a href = "#agumbe"  aria-controls = "messages" role = "tab" data-toggle = "tab">Agumbe Thing, CTO</a>
+        </li>
+        <li role = "presentation">
+            <a href = "#alberto"  aria-controls = "settings" role = "tab" data-toggle = "tab">Alberto Somayya, Exec. Chef</a>
+        </li>
+    </ul>
+<!-- Collapsible stuff --><br>
+<div class = "col-md-5 col-md-offset-1">
+    <div class = "collapse in" id = "collapseExample">
+        <div class = "well">
+            <h3>Some Collapsible Content</h3>
+            <p> This is some collapsible content</p>
+        </div>
+    </div>
+</div>
+<div class = "col-md-3">
+    <a class = "btn btn-primary" role = "button" data-toggle = "collapse" href = "#collapseExample" aria-expanded = "false" aria-controls = "collapseExample" data-placement = "right" title = "Used to collapse panel">
+        Toggle info
+    </a>
+</div>
+<!-- Accordian -->
+<div class = "row">
+    <div class = "panel-group" id = "accordian" role = "tablist">
+        <div class = "panel panel-default">
+            <div class = "panel-heading" role = "tab" id = "headingPeter">
+                <h3 class = "panel-title">
+                    <a role = "button" data-toggle = "collapse" data-parent = "#accordian" href = "#peter2">
+                        Peter Pan
+                    </a>
+                </h3>
+            </div>
+            <div role = "tabpanel" class = "panel-collapse collapse" id = "peter2">
+                <div class = "panel-body">
+                Basdlnasldnas sadklnasdlknasd laskdaskldnm <br> asldksadmas dosiahdlas dlkashdlk
+                </div>
+            </div>
+        </div>
+        <div class = "panel panel-default">
+            <div class = "panel-heading" role = "tab" id = "headingDanny">
+                <h3 class = "panel-title">
+                    <a role = "button" data-toggle = "collapse" data-parent = "#accordian" href = "#danny2">
+                        Danny
+                    </a>
+                </h3>
+            </div>
+            <div role = "tabpanel" class = "panel-collapse collapse" id = "danny2">
+                <div class = "panel-body">
+                Basdlnasldnas sadklnasdlknasd laskdaskldnm <br> asldksadmas dosiahdlas dlkashdlk
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "row">
+<!-- Tooltip -->
+    <div class = "col-sm-3 col-sm-offset-2">
+        <a class = "btn btn-primary" role = "button" data-toggle = "tooltip" data-placement = "right" title = "Used to collapse panel">
+            Tool
+        </a>
+    </div>
+<!-- Popup -->
+    <div class = "col-sm-3">
+        <a class = "btn btn-primary" role = "button" data-toggle = "popover" data-placement = "right" title = "Message 1" data-content = "Text for Message 1 is text">
+            Pop
+        </a>
+    </div>
+<!-- Modal -->
+    <div class = "col-sm-3">
+        <a class = "btn btn-primary" role = "button" data-toggle = "modal" data-target = "#loginModal">
+            Modal
+        </a>
+    </div>
+</div>
+<!-- Modal -->
+<div id = "loginModal" class = "modal fade" role= "dialog">
+    <div class = "modal-dialog">
+        <div class = "modal-content">
+            <div class = "modal-header">
+                <button type = "button" class = "close" data-dismiss = "modal"> &times;</button>
+                <h4 class = "modal-title">Login</h4>
+            </div>
+            <div class = "modal-body">
+                ASDsadas asd sad asd 
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<!-- Carousel -->
+<div id = "mycarousel" class = "carousel slide" data-ride = "carousel" style="background-color: yellow;">
+    <div class = "carousel-inner" role = "listbox">
+        <div class = "item active">
+            asdsadasdasdas<br><br><br><br>
+            <div class = "carousel-caption">Caption</div>
+        </div>
+        <div class = "item">
+            asdsadasdasdas<br>
+            asdsad<br>
+            asdsa<br>
+            das<br>
+            d<br>
+            asd<br>
+            asdsad<br>
+            asd<br>
+            <div class = "carousel-caption">Caption 2</div>
+        </div>
+        <div class = "item">
+            asdsadasdasdas<br>
+            asdsad<br>
+            <br>
+            das<br>
+            d<br>
+            <br>
+            asdsad<br>
+            asd<br>
+            <div class = "carousel-caption">Caption 3</div>
+        </div>
+    </div>
+    <ol class = "carousel-indicators">
+        <li data-target = "#mycarousel" data-slide-to = "0" class = "active"></li>
+        <li data-target = "#mycarousel" data-slide-to = "1"></li>
+        <li data-target = "#mycarousel" data-slide-to = "2"></li>
+    </ol>    
+    <a class = "left carousel-control" href = "#mycarousel" role = "button" data-slide = "prev">
+        <span class = "glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class = "right carousel-control" href = "#mycarousel" role = "button" data-slide = "next">
+        <span class = "glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+<br><br><br><br><br>
+<!-- Bootstrap Javascript file links -->
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
+<!-- For tooltips and modals -->
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+</html>
